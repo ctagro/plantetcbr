@@ -76,7 +76,7 @@
                   <div class="form-check form-group">
                      <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
                      <label class="form-check-label" for="validationFormCheck1">Check this checkbox</label>
-                     <div class="invalid-feedback">Example invalid feedback text</div>
+                     <div class="invalid-feedback">Example invalid feedback text</div> 
                   </div>
                   <div class="form-check">
                      <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>

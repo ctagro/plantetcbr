@@ -32,6 +32,9 @@ class HomeController extends Controller
 
         $data = $last_dates[0];
 
+//dd($last_dates,$products);
+
+
 
         return view('plantetc.dashboards.dashboard',compact('products','last_dates'));
     }

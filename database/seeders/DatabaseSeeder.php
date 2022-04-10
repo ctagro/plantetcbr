@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(1000)->create();
+      //   \App\Models\User::factory(1000)->create();
       /*  \App\Models\User::create([
             'name' => 'System Admin',
             'first_name' => 'System',
@@ -27,5 +27,21 @@ class DatabaseSeeder extends Seeder
         ]);
 */
       //  $this->call(CeasaProductSeeder::class);
+
+
+    
+  
+        $this->call(UserSeeder::class);
+        $this->call(ActivePrincipleSeeder::class);
+        $this->call(CeasaProductSeeder::class);
+        $this->call(CropSeeder::class);
+        $this->call(CropVarietySeeder::class);
+        $this->call(DiseaseSeeder::class);
+        $this->call(PesticideSeeder::class);
+        $this->call(Price_ceasa_bhSeeder::class);
+         $this->call(CropDiseaseSeeder::class);
+  
+     
+  
     }
 }

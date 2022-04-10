@@ -80,7 +80,47 @@ Route::namespace('Charts')->group(function () {
 // Dashboard Routes
   Route::get('/dashboard', [App\Http\Controllers\Plantetc\HomeController::class, 'index'])->name('dashboard');
 
-//--------------------  Fim Plantetc ------------------------
+// ----// Teste relacionamento muito pata muitos ------
+
+// ----// Teste relacionamento muito pata muitos Crop------
+
+Route::get('crop/create', [App\Http\Controllers\CropController::class,'create'])->name('crop.create'); 
+Route::post('crop/store', [App\Http\Controllers\CropController::class, 'store'])->name('crop.store');
+Route::get('crop/index', [App\Http\Controllers\CropController::class, 'index'])->name('crop.index');
+Route::get('crop/{crop}', [App\Http\Controllers\CropController::class,'show'])->name('crop.show');
+Route::get('crop/{crop}/edit', [App\Http\Controllers\CropController::class,'edit'])->name('crop.edit');
+Route::patch('crop/{crop}', [App\Http\Controllers\CropController::class,'update'])->name('crop.update');
+Route::delete('crop/{crop}', [App\Http\Controllers\CropController::class,'destroy'])->name('crop.destroy');
+Route::get('variety/{crop}', [App\Http\Controllers\CropController::class,'variety'])->name('crop.variety');
+
+Route::get('disease/create', [App\Http\Controllers\Pesticide\DiseaseController::class,'create'])->name('disease.create'); 
+Route::post('disease/store', [App\Http\Controllers\Pesticide\DiseaseController::class, 'store'])->name('disease.store');
+Route::get('disease/index', [App\Http\Controllers\Pesticide\DiseaseController::class, 'index'])->name('disease.index');
+Route::get('disease/{disease}', [App\Http\Controllers\Pesticide\DiseaseController::class,'show'])->name('disease.show');
+Route::get('disease/{disease}/edit', [App\Http\Controllers\Pesticide\DiseaseController::class,'edit'])->name('disease.edit');
+Route::patch('disease/{disease}', [App\Http\Controllers\Pesticide\DiseaseController::class,'update'])->name('disease.update');
+Route::delete('disease/{disease}', [App\Http\Controllers\Pesticide\DiseaseController::class,'destroy'])->name('disease.destroy');
+
+
+Route::get('join/{crop_id},{desease_id}', [App\Http\Controllers\Join\JoinController::class, 'join_crop_disease'])->name('join');
+Route::get('locate_diseasesAScrop/{crop_id}', [App\Http\Controllers\Join\JoinController::class, 'locate_diseasesAScrop'])->name('locate_diseasesAScrop');
+
+
+Route::get('crop_variety/create', [App\Http\Controllers\Auxiliaries\Crop_varietyController::class,'create'])->name('crop_variety.create'); 
+Route::post('crop_variety/store', [App\Http\Controllers\Auxiliaries\Crop_varietyController::class, 'store'])->name('crop_variety.store');
+Route::get('crop_variety/index', [App\Http\Controllers\Auxiliaries\Crop_varietyController::class, 'index'])->name('crop_variety.index');
+Route::get('crop_variety/{crop_variety}', [App\Http\Controllers\Auxiliaries\Crop_varietyController::class,'show'])->name('crop_variety.show');
+Route::get('crop_variety/{crop_variety}/edit', [App\Http\Controllers\Auxiliaries\Crop_varietyController::class,'edit'])->name('crop_variety.edit');
+Route::patch('crop_variety/{crop_variety}', [App\Http\Controllers\Auxiliaries\Crop_varietyController::class,'update'])->name('crop_variety.update');
+Route::delete('crop_variety/{crop_variety}', [App\Http\Controllers\Auxiliaries\Crop_varietyController::class,'destroy'])->name('crop_variety.destroy');
+
+
+
+Route::get('locate_cropsASdisease/{disease_id}', [App\Http\Controllers\Join\JoinController::class, 'locate_cropsASdisease'])->name('locate_cropsASdisease');
+
+
+
+  //--------------------  Fim Plantetc ------------------------
 
 
 /*

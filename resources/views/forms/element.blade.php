@@ -127,10 +127,13 @@
                         <label class="form-label" for="colFormLabelSm">Small</label>
                         <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="form-control-sm">
                     </div>
+                    <br>
                     <div class="form-group">
                         <label class="form-label" for="colFormLabel">Default</label>
                         <input type="email" class="form-control" id="colFormLabel" placeholder="form-control">
                     </div>
+                    <br>
+                    
                     <div class="form-group mb-0">
                         <label class="form-label pb-0" for="colFormLabelLg">Large</label>
                         <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="form-control-lg">
