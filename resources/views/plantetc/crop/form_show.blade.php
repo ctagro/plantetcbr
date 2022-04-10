@@ -27,7 +27,7 @@
                             <div class="form-control form-control-sm">{{ $crop->description}}</div>
                           </div>
                           <br>                     
-    
+  
                             <label class="form-label" for="email">Doenças que atingem a cultura:</label>
                             <div class="row">
                                 <?php $index = 0   ?>    
