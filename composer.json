@@ -41,7 +41,8 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "App\\View\\Components\\":"app/View/Components/"
+            "App\\View\\Components\\authsessionstatus\\":"app/View/Components/auth-session-status.php/",
+            "App\\View\\Components\\authvalidationerrors\\":"app/View/Components/auth-validation-errors.php/"
         },
         "files": [
             "app/Helpers/helper.php"
