@@ -24,6 +24,6 @@ class AuthValidationErrors extends Component
      */
     public function render()
     {
-        return view('components.auth-validation-errors');
+        return view('components.AuthValidationErrors');
     }
 }

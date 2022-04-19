@@ -26,6 +26,6 @@ class AuthSessionStatus extends Component
      */
     public function render()
     {
-        return view('components.auth-session-status');
+        return view('components.AuthSessionStatus');
     }
 }
