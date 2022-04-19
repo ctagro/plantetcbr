@@ -7,6 +7,7 @@ use Illuminate\View\Component;
 class AuthValidationErrors extends Component
 {
     public $errors;
+
     /**
      * Create a new component instance.
      *
@@ -14,9 +15,8 @@ class AuthValidationErrors extends Component
      */
     public function __construct($errors='')
     {
-        $this -> errors = $errors; //
+       $this -> errors = $errors; //
     }
-
     /**
      * Get the view / contents that represent the component.
      *
@@ -24,6 +24,6 @@ class AuthValidationErrors extends Component
      */
     public function render()
     {
-        return view('components.AuthValidationErrors');
+        return view('components.auth-validation-errors');
     }
 }

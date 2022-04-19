@@ -6,7 +6,6 @@ use Illuminate\View\Component;
 
 class AuthSessionStatus extends Component
 {
-
     public $status;
 
     /**
@@ -16,9 +15,9 @@ class AuthSessionStatus extends Component
      */
     public function __construct($status='')
     {
-        $this -> status = $status; //
+       $this -> status = $status; //
     }
-
+       
     /**
      * Get the view / contents that represent the component.
      *
@@ -26,6 +25,6 @@ class AuthSessionStatus extends Component
      */
     public function render()
     {
-        return view('components.AuthSessionStatus');
+        return view('components.auth-session-status');
     }
 }
