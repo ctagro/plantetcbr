@@ -4,19 +4,18 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class authvalidationerrors extends Component
+class AuthValidationErrors extends Component
 {
-    public $errors;
-
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($errors='')
+    public function __construct()
     {
-       $this -> errors = $errors; //
+        //
     }
+
     /**
      * Get the view / contents that represent the component.
      *

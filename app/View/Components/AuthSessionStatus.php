@@ -4,18 +4,16 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class authsessionstatus extends Component
+class AuthSessionStatus extends Component
 {
-    public $status;
-
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($status='')
+    public function __construct()
     {
-       $this -> status = $status; //
+        //
     }
 
     /**
