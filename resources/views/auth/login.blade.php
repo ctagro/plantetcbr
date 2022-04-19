@@ -23,10 +23,10 @@
                         <div class="card-body">
                         <h2 class="mb-2 text-center">Sign In</h2>
                         <p class="text-center">Login to stay connected.</p>
-                        <x-auth-session-status class="mb-4" :status="session('status')" />
+                        <x-AuthSessionStatus class="mb-4" :status="session('status')" />
 
                         <!-- Validation Errors -->
-                        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+                        <x-AuthValidationErrors class="mb-4" :errors="$errors" />
                         <form method="POST" action="{{ route('login') }}" data-toggle="validator">
                             {{csrf_field()}}
                            <div class="row">
