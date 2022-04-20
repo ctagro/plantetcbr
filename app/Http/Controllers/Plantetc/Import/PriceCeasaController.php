@@ -21,14 +21,14 @@ Use League\Csv\Statement;
 
 class PriceCeasaController extends Controller
 {
-    protected $priceCeasa_import; 
+    protected $priceCeasaImport; 
 
     public function __construct(
-                                PriceCeasaImport $priceCeasa_import
+                                PriceCeasaImport $priceCeasaImport
                                 )
     {
        
-        $this->priceCeasa_import = $priceCeasa_import;
+        $this->priceCeasaImport = $priceCeasaImport;
 
     }
 
@@ -54,7 +54,7 @@ class PriceCeasaController extends Controller
                         ->with('erro', 'Esta data já foi importada!!! Verifique a data dos dados que quer baixar...');
         }
        
-        $response = $this->priceCeasa_import->allData($request);
+        $response = $this->priceCeasaImport->allData($request);
 
         $cotacoes = Price_ceasa_bh::where('date', '=', $date)->orderBy('date')->get();           
        

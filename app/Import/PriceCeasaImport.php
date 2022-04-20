@@ -33,6 +33,7 @@ class PriceCeasaImport
      // dd($date);
     
         $stream = fopen($file, 'r');
+        
       
 
     //    $stream = fopen('../App/Http/Controllers/Import/boletim_grupo.csv', 'r');
