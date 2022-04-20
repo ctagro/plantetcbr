@@ -33,6 +33,8 @@ class PriceCeasaImport
      // dd($date);
     
         $stream = fopen($file, 'r');
+
+       // dd($stream);
         
       
 
